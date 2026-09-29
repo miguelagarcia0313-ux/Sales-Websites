@@ -16,168 +16,99 @@ const STORE_CONFIG = {
 ====================================================== */
 const PRODUCTS = [
   {
-    name: "Magellan Outdoors Men's Laguna Madre T-shirt",
-    price: 35.99,
+    name: "Heritage Cotton Overshirt",
+    price: 79.99,
     category: "Shirts",
     stock: "in",
-    sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+    sizes: ["S", "M", "L", "XL"],
     availableSizes: ["S", "M", "L", "XL"],
     colors: [
-      { name: "Red", hex: "#fcf8f8", image: "https://academy.scene7.com/is/image/academy/20379448?$pdp-gallery-ng$" },
-      { name: "Blue", hex: "#2F8F7B", image: "https://academy.scene7.com/is/image/academy/20379446?$pdp-gallery-ng$" },
-      { name: "Yellow", hex: "#F4B740", image: "https://academy.scene7.com/is/image/academy/21695713?$pdp-gallery-ng$" },
-      { name: "Black", hex: "#2B2118", image: "https://academy.scene7.com/is/image/academy/21568629?$pdp-gallery-ng$" }
+      { name: "Stone", hex: "#d7c6b5", image: "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=900&q=80" },
+      { name: "Olive", hex: "#6e7b58", image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=900&q=80" }
     ]
   },
   {
-    name: "V-Neck T-Shirt",
-    price: 24.99,
+    name: "Crest Knit Polo",
+    price: 68.5,
     category: "Shirts",
     stock: "low",
-    sizes: ["XS", "S", "M", "L", "XL"],
-    availableSizes: ["M", "L"],
+    sizes: ["S", "M", "L", "XL"],
+    availableSizes: ["M", "L", "XL"],
     colors: [
-      { name: "Red", hex: "#D64545", image: "https://placehold.co/500x500/D64545/FFF7EA?text=V-Neck" },
-      { name: "White", hex: "#FFFFFF", image: "https://placehold.co/500x500/FFFFFF/2B2118?text=V-Neck" },
-      { name: "Navy", hex: "#1a3a52", image: "https://placehold.co/500x500/1a3a52/FFF7EA?text=V-Neck" }
+      { name: "Navy", hex: "#1f2b3a", image: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=80" },
+      { name: "Camel", hex: "#b68a5b", image: "https://images.unsplash.com/photo-1504593811423-6dd665756598?auto=format&fit=crop&w=900&q=80" }
     ]
   },
   {
-    name: "Magellan Outdoors Men's Laguna Madre T-shirt",
-    price: 353.99,
-    category: "Shirts",
+    name: "Summit Utility Jacket",
+    price: 149.99,
+    category: "Outerwear",
     stock: "in",
-    sizes: ["XS", "S", "M", "L", "XL", "XXL"],
-    availableSizes: ["S", "M", "L", "XL"],
+    sizes: ["S", "M", "L", "XL"],
+    availableSizes: ["S", "M", "L"],
     colors: [
-      { name: "Red", hex: "#fcf8f8", image: "https://academy.scene7.com/is/image/academy/20379448?$pdp-gallery-ng$" },
-      { name: "Blue", hex: "#2F8F7B", image: "https://academy.scene7.com/is/image/academy/20379446?$pdp-gallery-ng$" },
-      { name: "Yellow", hex: "#F4B740", image: "https://academy.scene7.com/is/image/academy/21695713?$pdp-gallery-ng$" },
-      { name: "Black", hex: "#2B2118", image: "https://academy.scene7.com/is/image/academy/21568629?$pdp-gallery-ng$" }
+      { name: "Forest", hex: "#2f4537", image: "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=80" },
+      { name: "Black", hex: "#171613", image: "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=900&q=80" }
     ]
   },
   {
-    name: "Magellan Outdoors Men's Laguna Madre T-shirt",
-    price: 345.99,
-    category: "Shirts",
+    name: "Aster Leather Bomber",
+    price: 189.99,
+    category: "Outerwear",
     stock: "in",
-    sizes: ["XS", "S", "M", "L", "XL", "XXL"],
-    availableSizes: ["S", "M", "L", "XL"],
+    sizes: ["S", "M", "L", "XL"],
+    availableSizes: ["M", "L", "XL"],
     colors: [
-      { name: "Red", hex: "#fcf8f8", image: "https://academy.scene7.com/is/image/academy/20379448?$pdp-gallery-ng$" },
-      { name: "Blue", hex: "#2F8F7B", image: "https://academy.scene7.com/is/image/academy/20379446?$pdp-gallery-ng$" },
-      { name: "Yellow", hex: "#F4B740", image: "https://academy.scene7.com/is/image/academy/21695713?$pdp-gallery-ng$" },
-      { name: "Black", hex: "#2B2118", image: "https://academy.scene7.com/is/image/academy/21568629?$pdp-gallery-ng$" }
+      { name: "Black", hex: "#1b1b1b", image: "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=900&q=80" },
+      { name: "Tan", hex: "#caa77a", image: "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=80" }
     ]
   },
   {
-    name: "Magellan Outdoors Men's Laguna Madre T-shirt",
-    price: 355.99,
-    category: "Shirts",
-    stock: "in",
-    sizes: ["XS", "S", "M", "L", "XL", "XXL"],
-    availableSizes: ["S", "M", "L", "XL"],
-    colors: [
-      { name: "Red", hex: "#fcf8f8", image: "https://academy.scene7.com/is/image/academy/20379448?$pdp-gallery-ng$" },
-      { name: "Blue", hex: "#2F8F7B", image: "https://academy.scene7.com/is/image/academy/20379446?$pdp-gallery-ng$" },
-      { name: "Yellow", hex: "#F4B740", image: "https://academy.scene7.com/is/image/academy/21695713?$pdp-gallery-ng$" },
-      { name: "Black", hex: "#2B2118", image: "https://academy.scene7.com/is/image/academy/21568629?$pdp-gallery-ng$" }
-    ]
-  },
-  {
-    name: "Magellan Outdoors Men's Laguna Madre T-shirt",
-    price: 356.99,
-    category: "Shirts",
-    stock: "in",
-    sizes: ["XS", "S", "M", "L", "XL", "XXL"],
-    availableSizes: ["S", "M", "L", "XL"],
-    colors: [
-      { name: "Red", hex: "#fcf8f8", image: "https://academy.scene7.com/is/image/academy/20379448?$pdp-gallery-ng$" },
-      { name: "Blue", hex: "#2F8F7B", image: "https://academy.scene7.com/is/image/academy/20379446?$pdp-gallery-ng$" },
-      { name: "Yellow", hex: "#F4B740", image: "https://academy.scene7.com/is/image/academy/21695713?$pdp-gallery-ng$" },
-      { name: "Black", hex: "#2B2118", image: "https://academy.scene7.com/is/image/academy/21568629?$pdp-gallery-ng$" }
-    ]
-  },
-  {
-    name: "Magellan Outdoors Men's Laguna Madre T-shirt",
-    price: 375.99,
-    category: "Shirts",
-    stock: "in",
-    sizes: ["XS", "S", "M", "L", "XL", "XXL"],
-    availableSizes: ["S", "M", "L", "XL"],
-    colors: [
-      { name: "Red", hex: "#fcf8f8", image: "https://academy.scene7.com/is/image/academy/20379448?$pdp-gallery-ng$" },
-      { name: "Blue", hex: "#2F8F7B", image: "https://academy.scene7.com/is/image/academy/20379446?$pdp-gallery-ng$" },
-      { name: "Yellow", hex: "#F4B740", image: "https://academy.scene7.com/is/image/academy/21695713?$pdp-gallery-ng$" },
-      { name: "Black", hex: "#2B2118", image: "https://academy.scene7.com/is/image/academy/21568629?$pdp-gallery-ng$" }
-    ]
-  },
-  {
-    name: "Magellan Outdoors Men's Laguna Madre T-shirt",
-    price: 358.99,
-    category: "Shirts",
-    stock: "in",
-    sizes: ["XS", "S", "M", "L", "XL", "XXL"],
-    availableSizes: ["S", "M", "L", "XL"],
-    colors: [
-      { name: "Red", hex: "#fcf8f8", image: "https://academy.scene7.com/is/image/academy/20379448?$pdp-gallery-ng$" },
-      { name: "Blue", hex: "#2F8F7B", image: "https://academy.scene7.com/is/image/academy/20379446?$pdp-gallery-ng$" },
-      { name: "Yellow", hex: "#F4B740", image: "https://academy.scene7.com/is/image/academy/21695713?$pdp-gallery-ng$" },
-      { name: "Black", hex: "#2B2118", image: "https://academy.scene7.com/is/image/academy/21568629?$pdp-gallery-ng$" }
-    ]
-  },
-  {
-    name: "Running Sneakers",
-    price: 89.99,
+    name: "Trail Runner Sneaker",
+    price: 94.99,
     category: "Shoes",
     stock: "in",
-    sizes: ["6", "7", "8", "9", "10", "11", "12", "13"],
-    availableSizes: ["7", "8", "9", "10", "11", "12"],
+    sizes: ["6", "7", "8", "9", "10", "11"],
+    availableSizes: ["7", "8", "9", "10", "11"],
     colors: [
-      { name: "Red", hex: "#00ff0d", image: "https://www.shoepalace.com/cdn/shop/files/b5b673f3e6cdda91c2d4682061ae98af_2048x2048.jpg?v=1778514600&title=jordan-if4396-103-air-jordan-3-retro-sail-and-university-red-mens-lifestyle-shoes-sail-black-university-red-pale-ivory" },
-      { name: "White", hex: "#FFFFFF", image: "https://placehold.co/500x500/FFFFFF/2B2118?text=Running+Shoes" },
-      { name: "Black", hex: "#2B2118", image: "https://placehold.co/500x500/2B2118/FFF7EA?text=Running+Shoes" },
-      { name: "Gray", hex: "#808080", image: "https://placehold.co/500x500/808080/FFF7EA?text=Running+Shoes" }
+      { name: "White", hex: "#f4efe8", image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80" },
+      { name: "Graphite", hex: "#3d3d3d", image: "https://images.unsplash.com/photo-1543508282-6319a3e2621f?auto=format&fit=crop&w=900&q=80" }
     ]
   },
   {
-    name: "Casual Canvas Shoes",
-    price: 64.99,
+    name: "Monarch Court Sneaker",
+    price: 109.99,
     category: "Shoes",
-    stock: "out",
+    stock: "low",
     sizes: ["5", "6", "7", "8", "9", "10", "11"],
-    availableSizes: ["6", "8", "10"],
+    availableSizes: ["6", "7", "8", "9", "10"],
     colors: [
-      { name: "Red", hex: "#D64545", image: "https://placehold.co/500x500/D64545/FFF7EA?text=Canvas+Shoes" },
-      { name: "Teal", hex: "#2F8F7B", image: "https://placehold.co/500x500/2F8F7B/FFF7EA?text=Canvas+Shoes" },
-      { name: "Navy", hex: "#1a3a52", image: "https://placehold.co/500x500/1a3a52/FFF7EA?text=Canvas+Shoes" }
+      { name: "Cream", hex: "#ece4d6", image: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=900&q=80" },
+      { name: "Chestnut", hex: "#8d5d42", image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80" }
     ]
   },
   {
-    name: "Adjustable Baseball Cap",
-    price: 22.99,
+    name: "Harbor Weekender Tote",
+    price: 84.99,
     category: "Accessories",
     stock: "in",
     sizes: ["One Size"],
     availableSizes: ["One Size"],
     colors: [
-      { name: "Red", hex: "#D64545", image: "https://placehold.co/500x500/D64545/FFF7EA?text=Baseball+Cap" },
-      { name: "Black", hex: "#2B2118", image: "https://placehold.co/500x500/2B2118/FFF7EA?text=Baseball+Cap" },
-      { name: "Navy", hex: "#1a3a52", image: "https://placehold.co/500x500/1a3a52/FFF7EA?text=Baseball+Cap" }
+      { name: "Sand", hex: "#d3b89b", image: "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=900&q=80" },
+      { name: "Black", hex: "#232323", image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80" }
     ]
   },
   {
-    name: "Cotton Crew Socks Pack",
-    price: 16.99,
+    name: "Fieldline Wool Cap",
+    price: 39.99,
     category: "Accessories",
-    stock: "low",
-    sizes: ["S", "M", "L"],
-    availableSizes: ["S", "L"],
+    stock: "in",
+    sizes: ["One Size"],
+    availableSizes: ["One Size"],
     colors: [
-      { name: "Red", hex: "#D64545", image: "https://placehold.co/500x500/D64545/FFF7EA?text=Socks+3-Pack" },
-      { name: "Black", hex: "#2B2118", image: "https://placehold.co/500x500/2B2118/FFF7EA?text=Socks+3-Pack" },
-      { name: "Gray", hex: "#808080", image: "https://placehold.co/500x500/808080/FFF7EA?text=Socks+3-Pack" },
-      { name: "White", hex: "#FFFFFF", image: "https://placehold.co/500x500/FFFFFF/2B2118?text=Socks+3-Pack" }
+      { name: "Charcoal", hex: "#3d3d3d", image: "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=900&q=80" },
+      { name: "Rust", hex: "#a8553d", image: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=80" }
     ]
   }
 ];

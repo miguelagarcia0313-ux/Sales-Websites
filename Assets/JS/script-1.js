@@ -4,60 +4,72 @@
    number everywhere on the site.
 ====================================================== */
 const STORE_CONFIG = {
-  name: "Basic Catalog Demo",
-  phone: "832-484-9161",       // Shown in the interface
-  phoneLink: "+18324849161"    // Used by the tel: and wa.me links, include country code
+  name: "Sweet Crumb Cakes",
+  phone: "832-484-9161",
+  phoneLink: "+18324849161"
 };
 
 /* ======================================================
    PRODUCTS
-   Basic Package: just name, price, category, image, and
-   an optional sizes list shown as text.
-   Add new items using this simple format:
-   { name: "Product Name", price: 12.50, category: "Category", image: "image-url", sizes: "S, M, L" }
+   Add custom dessert items here with a category, price,
+   and image for the bakery storefront.
 ====================================================== */
 const PRODUCTS = [
   {
-    name: "Magellan Outdoors Men's Laguna Madre T-shirt",
-    price: 35.99,
-    category: "Shirts",
-    image: "https://academy.scene7.com/is/image/academy/20379448?$pdp-gallery-ng$",
-    sizes: "S, M, L, XL"
+    name: "Classic Vanilla Birthday Cake",
+    price: 54.99,
+    category: "Signature Cakes",
+    image: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=80",
+    sizes: "6-8 servings"
   },
   {
-    name: "V-Neck T-Shirt",
+    name: "Chocolate Fudge Celebration Cake",
+    price: 62.5,
+    category: "Signature Cakes",
+    image: "https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=900&q=80",
+    sizes: "8-10 servings"
+  },
+  {
+    name: "Strawberry Shortcake Layer",
+    price: 48.99,
+    category: "Seasonal Cakes",
+    image: "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=900&q=80",
+    sizes: "6 servings"
+  },
+  {
+    name: "Red Velvet Rose Cake",
+    price: 59.99,
+    category: "Seasonal Cakes",
+    image: "https://images.unsplash.com/photo-1535141192574-5d4897c12636?auto=format&fit=crop&w=900&q=80",
+    sizes: "8 servings"
+  },
+  {
+    name: "Vanilla Cupcake Box",
     price: 24.99,
-    category: "Shirts",
-    image: "https://placehold.co/500x500/D64545/FFF7EA?text=V-Neck",
-    sizes: "M, L"
+    category: "Cupcakes",
+    image: "https://images.unsplash.com/photo-1486427944299-d1955d23e34d?auto=format&fit=crop&w=900&q=80",
+    sizes: "12 cupcakes"
   },
   {
-    name: "Running Sneakers",
-    price: 89.99,
-    category: "Shoes",
-    image: "https://placehold.co/500x500/2B2118/FFF7EA?text=Running+Shoes",
-    sizes: "7, 8, 9, 10, 11, 12"
+    name: "Chocolate Ganache Cupcakes",
+    price: 27.99,
+    category: "Cupcakes",
+    image: "https://images.unsplash.com/photo-1550617931-e17a7b70dce2?auto=format&fit=crop&w=900&q=80",
+    sizes: "12 cupcakes"
   },
   {
-    name: "Casual Canvas Shoes",
-    price: 64.99,
-    category: "Shoes",
-    image: "https://placehold.co/500x500/2F8F7B/FFF7EA?text=Canvas+Shoes",
-    sizes: "6, 8, 10"
+    name: "Sugar Cookie Gift Box",
+    price: 19.99,
+    category: "Treats",
+    image: "https://images.unsplash.com/photo-1499636136210-6d847904a823?auto=format&fit=crop&w=900&q=80",
+    sizes: "1 dozen"
   },
   {
-    name: "Adjustable Baseball Cap",
+    name: "Mini Cheesecake Bites",
     price: 22.99,
-    category: "Accessories",
-    image: "https://placehold.co/500x500/D64545/FFF7EA?text=Baseball+Cap",
-    sizes: "One size"
-  },
-  {
-    name: "Cotton Crew Socks Pack",
-    price: 16.99,
-    category: "Accessories",
-    image: "https://placehold.co/500x500/808080/FFF7EA?text=Socks+3-Pack",
-    sizes: "S, L"
+    category: "Treats",
+    image: "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=900&q=80",
+    sizes: "10 bites"
   }
 ];
 
@@ -114,11 +126,11 @@ function getFilteredProducts() {
 
 // Build the WhatsApp message to order a specific product
 function buildOrderLink(product) {
-  const message = `🛍️ Hi, I'm interested in this product from *${STORE_CONFIG.name}*:\n\n` +
+  const message = `🛍️ Hi, I'm interested in this cake from *${STORE_CONFIG.name}*:\n\n` +
     `• ${product.name}\n` +
     `• Price: $${formatPrice(product.price)}\n` +
-    `• Available sizes: ${product.sizes}\n\n` +
-    `Is it in stock?`;
+    `• Serving size: ${product.sizes}\n\n` +
+    `Can you tell me more about it?`;
   return `https://wa.me/${STORE_CONFIG.phoneLink}?text=${encodeURIComponent(message)}`;
 }
 
@@ -133,7 +145,7 @@ function createProductCard(product) {
     <div class="product-body">
       <div class="product-category">${product.category}</div>
       <p class="product-description">${product.name}</p>
-      <p class="product-sizes">Sizes: ${product.sizes}</p>
+      <p class="product-sizes">Serves: ${product.sizes}</p>
       <div class="price-tag">
         <span class="amount">$${formatPrice(product.price)}</span>
         <span class="currency">USD</span>
