@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cocu's Shop — Package 3 Demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../Assets/CSS/styles-3.css">
+</head>
+
+<body>
+  <!-- Demo banner: remove this when you hand off the final site to the client -->
+  <div style="background:#171613;color:#fff;text-align:center;padding:8px 14px;font-family:'Inter',sans-serif;font-size:13px;">
+    Demo — Package 3: Complete Catalog ($170) · <a href="../index.html" style="color:#e3c67a;">Back to packages</a>
+  </div>
+
+  <!-- Top contact bar -->
+  <div class="contact-bar">
+    <a id="phone-link" href="tel:+18324849161" class="phone-link">
+      <svg viewBox="0 0 24 24" class="phone-icon" aria-hidden="true">
+        <path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.9 21 3 13.1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1L6.6 10.8z"/>
+      </svg>
+      <span id="phone-number">832-484-9161</span>
+    </a>
+  </div>
+
+  <!-- Store banner -->
+  <banner class="store-banner">
+    <div class="banner-content">
+      <img src="../Assets/IMG/Logo.png" alt="Cocu's Shop logo" class="banner-logo">
+      <div class="banner-text">
+        <h1 id="store-name" class="store-name">Cocu's Shop</h1>
+        <p class="store-tagline">Your Style, Your Choice</p>
+      </div>
+    </div>
+  </banner>
+
+  <!-- Header with hamburger -->
+  <header class="header">
+    <button id="hamburger-menu" class="hamburger-menu" aria-label="Filters menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div class="header-actions">
+      <a href="#contact-section" class="contact-cta">Contact Me</a>
+    </div>
+  </header>
+
+  <!-- Hero banner: the big visual promo strip, unique to Package 3 -->
+  <section class="hero-banner">
+    <div class="hero-banner-inner">
+      <p class="hero-banner-eyebrow">New Season</p>
+      <h2 class="hero-banner-title">Gear Up In Style</h2>
+      <p class="hero-banner-text">New arrivals, fan favorites, and limited sizes — browse the full collection below before they're gone.</p>
+      <a href="#product-grid" class="hero-banner-cta">Shop the Collection</a>
+    </div>
+  </section>
+
+  <!-- Search, sort, and favorites -->
+  <div class="controls">
+    <div class="search-wrap">
+      <svg viewBox="0 0 24 24" class="search-icon" aria-hidden="true">
+        <circle cx="11" cy="11" r="7"/>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+      </svg>
+      <input type="text" id="search-input" placeholder="Search products...">
+    </div>
+    <div class="toolbar-row">
+      <select id="sort-select" class="sort-select">
+        <option value="default">Sort: Recommended</option>
+        <option value="price-asc">Price: Low to High</option>
+        <option value="price-desc">Price: High to Low</option>
+        <option value="availability">Availability first</option>
+      </select>
+      <button id="favorites-toggle" class="favorites-toggle">🤍 Favorites</button>
+    </div>
+  </div>
+
+  <!-- Filter sidebar -->
+  <div id="category-chips" class="category-chips"></div>
+  <div id="sidebar-overlay" class="sidebar-overlay"></div>
+
+  <!-- Product grid -->
+  <main id="product-grid" class="product-grid"></main>
+  <p id="empty-message" class="empty-message" hidden>No products match your search.</p>
+
+  <!-- Floating cart button -->
+  <button id="cart-btn" class="cart-btn">
+    🛒 <span id="cart-count" class="cart-count">0</span>
+  </button>
+
+  <!-- Cart modal -->
+  <div id="cart-modal" class="cart-modal">
+    <div class="cart-modal-content">
+      <div class="cart-modal-header">
+        <h2>Shopping Cart</h2>
+        <button id="close-cart" class="close-cart">&times;</button>
+      </div>
+      <div id="cart-items" class="cart-items">
+        <p class="empty-cart">Your cart is empty</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Quick view modal -->
+  <div id="quickview-modal" class="quickview-modal">
+    <div class="quickview-content">
+      <button id="close-quickview" class="close-quickview">&times;</button>
+      <div id="quickview-body"></div>
+    </div>
+  </div>
+
+  <section id="contact-section" class="contact-section">
+    <div class="contact-card">
+      <p class="contact-eyebrow">Contact Me</p>
+      <h2>Let's Talk</h2>
+      <p>Reach me by phone or WhatsApp</p>
+      <div class="contact-links">
+        <a href="tel:+18324849161">📞 Phone</a>
+        <a href="https://wa.me/18324849161" target="_blank" rel="noreferrer">💬 WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>Made by MAG · 2026</p>
+  </footer>
+
+  <script src="../Assets/JS/script-3.js"></script>
+</body>
+</html>
