@@ -3,28 +3,28 @@
    Rediseño limpio y minimalista, sin buscador ni carrito.
 ====================================================== */
 :root {
-  --bg: #fbfaf7;
+  --bg: #fffaf5;
   --surface: #ffffff;
-  --surface-soft: #f3f2ed;
-  --ink: #17181a;
-  --ink-soft: #6f6e6a;
-  --line: #e7e4dc;
+  --surface-soft: #fff1eb;
+  --ink: #2e1c1b;
+  --ink-soft: #6c4f4b;
+  --line: #f3d9d1;
 
-  --accent: #2f6f4f;
-  --accent-dark: #24573e;
-  --accent-tint: #e8f1ea;
+  --accent: #c35a75;
+  --accent-dark: #8f3e57;
+  --accent-tint: #fde9ee;
 
-  --price: #c1592f;
+  --price: #d1783d;
 
-  --success: #25d366;
-  --success-hover: #1fb857;
+  --success: #3bb273;
+  --success-hover: #2f9b62;
 
-  --shadow-rgb: 23, 24, 26;
+  --shadow-rgb: 94, 42, 56;
   --shadow-soft: rgba(var(--shadow-rgb), 0.06);
   --shadow-medium: rgba(var(--shadow-rgb), 0.12);
   --shadow-strong: rgba(var(--shadow-rgb), 0.22);
 
-  --font-display: 'Sora', sans-serif;
+  --font-display: 'Baloo 2', cursive;
   --font-body: 'Inter', sans-serif;
 }
 
@@ -64,9 +64,9 @@ body {
 
 /* Banner de la tienda */
 .store-banner {
-  background-color: var(--surface);
+  background: linear-gradient(135deg, #fffaf5 0%, #ffe9ea 52%, #fff2d9 100%);
   border-bottom: 1px solid var(--line);
-  padding: 26px 20px;
+  padding: 34px 20px 28px;
 }
 
 .banner-content {
@@ -83,12 +83,20 @@ body {
 .banner-text .store-name {
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: 28px;
+  font-size: 42px;
+  line-height: 1;
   color: var(--ink);
-  letter-spacing: -0.3px;
+  letter-spacing: -0.5px;
 }
 
-.banner-text .store-tagline { margin-top: 6px; color: var(--ink-soft); font-size: 13px; }
+.banner-text .store-tagline {
+  margin-top: 8px;
+  color: var(--ink-soft);
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
 
 /* Encabezado simple */
 .header {
@@ -106,18 +114,22 @@ body {
 
 .contact-cta {
   display: inline-block;
-  padding: 10px 18px;
+  padding: 10px 22px;
   border-radius: 999px;
-  background-color: var(--ink);
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
   color: var(--bg);
   text-decoration: none;
   font-family: var(--font-display);
-  font-weight: 600;
-  transition: background-color 0.2s ease;
-  font-size: 13px;
+  font-weight: 700;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  font-size: 16px;
+  box-shadow: 0 12px 22px rgba(195, 90, 117, 0.22);
 }
 
-.contact-cta:hover { background-color: var(--accent); }
+.contact-cta:hover {
+  background: linear-gradient(135deg, var(--accent-dark) 0%, var(--accent) 100%);
+  transform: translateY(-1px);
+}
 
 /* Categorías como pestañas simples */
 .category-tabs {
@@ -251,20 +263,20 @@ body {
 /* Sección de contacto y pie de página */
 .contact-section { max-width: 900px; margin: 50px auto 0; padding: 0 20px; }
 
-.contact-card { background-color: var(--ink); color: var(--bg); border-radius: 20px; padding: 36px 32px; }
+.contact-card { background: linear-gradient(135deg, #2f1d1d 0%, #4a2d2a 100%); color: var(--bg); border-radius: 20px; padding: 36px 32px; }
 
 .contact-eyebrow {
   font-family: var(--font-display);
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1.2px;
-  color: #9ad6ae;
+  color: #f8d1d1;
   margin-bottom: 8px;
 }
 
-.contact-card h2 { font-family: var(--font-display); font-weight: 700; font-size: 24px; margin-bottom: 8px; }
-.contact-card p { color: #c9c8c3; line-height: 1.6; margin-bottom: 18px; font-size: 14px; }
+.contact-card h2 { font-family: var(--font-display); font-weight: 700; font-size: 30px; margin-bottom: 8px; }
+.contact-card p { color: #f4e8e1; line-height: 1.6; margin-bottom: 18px; font-size: 14px; }
 
 .contact-links { display: flex; flex-wrap: wrap; gap: 10px; }
 

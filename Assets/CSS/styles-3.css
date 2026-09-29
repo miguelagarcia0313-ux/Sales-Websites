@@ -434,7 +434,16 @@ body {
 }
 
 /* Color selector */
-.color-selector { display: flex; justify-content: flex-start; gap: 6px; padding: 8px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.color-selector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  text-align: center;
+}
 
 .color-bubble {
   width: 18px;
@@ -446,6 +455,7 @@ body {
   position: relative;
   flex-shrink: 0;
   box-shadow: 0 0 0 1px var(--line);
+  display: inline-block;
 }
 
 .color-bubble:hover { transform: scale(1.15); }
